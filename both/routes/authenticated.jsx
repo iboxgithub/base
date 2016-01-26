@@ -22,3 +22,10 @@ authenticatedRoutes.route( '/dashboard', {
     ReactLayout.render( Default, { yield: <Dashboard /> } );
 }
 });
+
+authenticatedRoutes.route( '/dashboardAnegdots', {
+    name: 'dashboardAnegdots',
+    action() {
+        ReactLayout.render( Default, { yield: <DashboardAnegdots /> } );
+    }
+});

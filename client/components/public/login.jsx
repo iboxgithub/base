@@ -3,6 +3,7 @@ Login = React.createClass({
         Modules.client.login( { form: "#login" } );
     },
     handleSubmit( event ) {
+        console.log('SDFFDS');
         event.preventDefault();
     },
     render() {
@@ -12,7 +13,7 @@ Login = React.createClass({
                 <h4 className="page-header">Login</h4>
                 <form id="login" className="login" onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="emailAddress">Email Address</label>
+                        <label htmlFor="emailAddress">Email Address3</label>
                         <input type="email" name="emailAddress" className="form-control" placeholder="Email Address" />
                     </div>
                     <div className="form-group">

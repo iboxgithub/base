@@ -2,15 +2,13 @@ AuthenticatedNavigation = React.createClass({
     currentUserEmail() {
         return Meteor.user().emails[0].address;
     },
-    logout(){
-        //Meteor.logout(); //todo: changed vs tuto
-    },
     render() {
         return (
             <div id="navbar-collapse" className="collapse navbar-collapse">
                 <ul className="nav navbar-nav">
                     <li className={FlowHelpers.currentRoute( 'index' )}><a href="/">Index</a></li>
                     <li className={FlowHelpers.currentRoute( 'dashboard' )}><a href="/dashboard">Dashboard</a></li>
+                    <li className={FlowHelpers.currentRoute( 'dashboardAnegdots' )}><a href="/dashboardAnegdots">dashboardAnegdots</a></li>
                 </ul>
                 <ul className="nav navbar-nav navbar-right">
                     <li className="dropdown">

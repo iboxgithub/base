@@ -34,7 +34,7 @@ let _handleLogin = () => { //jQuery automatically binds with the component > tod
     let email    = $( '[name="emailAddress"]' ).val(),
         password = $( '[name="password"]' ).val();
 
-    console.log('test ' + email);
+    //console.log('test ' + email);
 
     Meteor.loginWithPassword( email, password, ( error ) => {
         if ( error ) {
